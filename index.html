@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework-5</title>
+</head>
+<body>
+    <style>
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 400px;
+            font-weight: bold;
+        }
+        .convert_value {
+            margin-top: 20px;
+        }
+        .btn {
+            margin-left: 10px;
+            padding: 10px;
+            font-weight: bold;
+            background-color: #00FA9A;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <div class="wrapper">
+        <div class="money">
+            <label>BYN:
+                <input id="byn_value" type="text">
+            </label>
+            <select id="selection">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="rub">RUB</option>
+            </select>
+            <button type="button" onclick="convertByn()" class="btn">Convert</button>
+        </div>
+        <div class="convert_value"><span id="result"></span></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
